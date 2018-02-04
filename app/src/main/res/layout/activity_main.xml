@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.PRIMADI_1202154151_MODUL1.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:text="Makan Malam"
+        android:textColor="#f123"
+        android:gravity="center"
+        android:textSize="40dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:text="Dengan Milea" />
+
+    <EditText
+        android:id="@+id/masakan"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/eatbus"
+        android:layout_alignStart="@+id/eatbus"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="75dp"
+        android:ems="10"
+        android:hint="Makanan"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/jumlah"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/masakan"
+        android:layout_alignStart="@+id/masakan"
+        android:layout_below="@+id/masakan"
+        android:ems="10"
+        android:hint="Jumlah"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/eatbus"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/masakan"
+        android:layout_marginTop="73dp"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_toStartOf="@+id/textView2"
+        android:background="#c7000a"
+        android:onClick="eatbus"
+        android:text="Eatbus" />
+
+    <Button
+        android:id="@+id/abnormal"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/eatbus"
+        android:layout_alignBottom="@+id/eatbus"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:background="#c7000a"
+        android:onClick="abnormal"
+        android:text="Abnormal" />
+</RelativeLayout>
